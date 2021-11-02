@@ -3,12 +3,13 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # Define camera matrix K
-K = np.array([[1.79677330e+03, 0.00000000e+00, 6.03044271e+02],
- [0.00000000e+00, 1.79821147e+03, 4.92880943e+02],
+K = np.array([[1.79533619e+03, 0.00000000e+00, 6.15361987e+02],
+ [0.00000000e+00, 1.79762029e+03, 4.88841563e+02],
  [0.00000000e+00, 0.00000000e+00, 1.00000000e+00]])
 
 # Define distortion coefficients d
-d = np.array([5.44787247e-02, 1.23043244e-01, -4.52559581e-04, 5.47011732e-03, -6.83110234e-01])
+d = np.array([-3.42497623e-01,  1.84956578e+00, -1.78145813e-03, -2.41032139e-03,
+  -7.22531291e+00])
 
 # Read an example image and acquire its size
 img = cv2.imread('/Users/nickduggan/Desktop/IMAGING/Foosball.jpg')
